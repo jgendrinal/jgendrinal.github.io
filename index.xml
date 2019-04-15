@@ -6,20 +6,11 @@
     <description>Recent content on The data salaryman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© 2020 Jose Francisco G. Endrinal</copyright>
+    <copyright>© 2019 Jose Francisco G. Endrinal</copyright>
     <lastBuildDate>Sun, 14 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>#SundayStats: A deep dive into the stats package in R - The Normal Distribution</title>
-      <link>/post/#sundaystats-a-deep-dive-into-the-stats-package-in-r-the-normal-distribution/</link>
-      <pubDate>Sun, 14 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/#sundaystats-a-deep-dive-into-the-stats-package-in-r-the-normal-distribution/</guid>
-      <description>DISCLAIMER: I am not a working data analyst, nor am I a data scientist. As such, the code, techniques, and methods used in this blog post do not qualify as industry-level code, techniques, and methods. This blog and its corresponding github repository are meant to document my progress as I come to learn the techniques and skills a data analyst or data scientist will be needing in their line of work.</description>
-    </item>
     
     <item>
       <title>About this site</title>
@@ -32,6 +23,24 @@ Python and R are favorites, but R is my tool of choice. Partly because it was ta
     </item>
     
     <item>
+      <title>Back to Iris: testing in R</title>
+      <link>/post/back-to-iris-testing-in-r/</link>
+      <pubDate>Sun, 14 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/back-to-iris-testing-in-r/</guid>
+      <description>DISCLAIMER: I am not a working data analyst, nor am I a data scientist. As such, the code, techniques, and methods used in this blog post do not qualify as industry-level code, techniques, and methods. This blog and its corresponding github repository are meant to document my progress as I come to learn the techniques and skills a data analyst or data scientist will be needing in their line of work.</description>
+    </item>
+    
+    <item>
+      <title>SundayStats: A deep dive into the stats package in R - The Normal Distribution</title>
+      <link>/post/sundaystats-a-deep-dive-into-the-stats-package-in-r-the-normal-distribution/</link>
+      <pubDate>Sun, 14 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/sundaystats-a-deep-dive-into-the-stats-package-in-r-the-normal-distribution/</guid>
+      <description>DISCLAIMER: I am not a working data analyst, nor am I a data scientist. As such, the code, techniques, and methods used in this blog post do not qualify as industry-level code, techniques, and methods. This blog and its corresponding github repository are meant to document my progress as I come to learn the techniques and skills a data analyst or data scientist will be needing in their line of work.</description>
+    </item>
+    
+    <item>
       <title>TRAIN, inflation, and why economists think everything causes everything</title>
       <link>/post/train-inflation-and-why-economists-think-everything-causes-everything/</link>
       <pubDate>Sun, 14 Apr 2019 00:00:00 +0000</pubDate>
@@ -41,19 +50,9 @@ Python and R are favorites, but R is my tool of choice. Partly because it was ta
     </item>
     
     <item>
-      <title>The MRT dataset: A Case in Exploratory Data Analysis</title>
-      <link>/post/the-mrt-dataset-a-case-in-exploratory-data-analysis/</link>
-      <pubDate>Sun, 14 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/the-mrt-dataset-a-case-in-exploratory-data-analysis/</guid>
-      <description>The Metro Rail Transit (MRT) is a light rail transit system in Metro Manila, Philippines that runs along Epifanio delos Santos Avenue (EDSA) from Taft Avenue Station in Manila, to North Avenue Station in Quezon City. This dataset is the hourly traffic of passengers going in and out of turnstiles at the different train stations covering the years 2012 to 2014.
-I cleaned up this dataset before I put it here so that we can do exploratory data analysis (EDA) straightaway.</description>
-    </item>
-    
-    <item>
       <title>Wasted on data: Exploring the wine dataset</title>
       <link>/post/wasted-on-data-exploring-the-wine-dataset/</link>
-      <pubDate>Sun, 14 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/wasted-on-data-exploring-the-wine-dataset/</guid>
       <description>Whether you’re a drinker or not, chances are that alcohol has played some part in the culture of where you live. It would be awesome to take measurements on any wine and be able to determine what kind of wine it was. In this dataset, we’re sticking with three unidentified types of wine.
@@ -61,13 +60,42 @@ The wine dataset is a series of measurements of different samples of three types
     </item>
     
     <item>
+      <title>The MRT dataset: A Case in Exploratory Data Analysis</title>
+      <link>/post/the-mrt-dataset-a-case-in-exploratory-data-analysis/</link>
+      <pubDate>Wed, 09 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/the-mrt-dataset-a-case-in-exploratory-data-analysis/</guid>
+      <description>The Metro Rail Transit (MRT) is a light rail transit system in Metro Manila, Philippines that runs along Epifanio delos Santos Avenue (EDSA) from Taft Avenue Station in Manila, to North Avenue Station in Quezon City. This dataset is the hourly traffic of passengers going in and out of turnstiles at the different train stations covering the years 2012 to 2014.
+I cleaned up this dataset before I put it here so that we can do exploratory data analysis (EDA) straightaway.</description>
+    </item>
+    
+    <item>
       <title>Restarting and Clearing</title>
       <link>/post/restarting-and-clearing/</link>
-      <pubDate>Sun, 18 Feb 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 24 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/restarting-and-clearing/</guid>
       <description>IntroductionI’m trying so hard to get people on the bandwagon of clearing and restarting their R sessions frequently. If there’s anything you can do to ensure the integrity of your code, it’s restarting the R session, clearing your console screen, and re-running your code.
 This practice ensures that you always start from a clean slate when you run your analysis. If you start your analysis with objects in your workspace and your code relies on that workspace, chances are that your analysis will fail to deliver, or you get unexpected (often wrong) results from the code you just run.</description>
+    </item>
+    
+    <item>
+      <title>The breast cancer dataset</title>
+      <link>/post/the-breast-cancer-dataset/</link>
+      <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/the-breast-cancer-dataset/</guid>
+      <description>The breast cancer dataset is a dataset of several tumor examinations. The goal of this dataset was to use the characteristics of these tumors to identify if they were harmless or potentially cancerous. Just as a radiologist (?) would use his or her experience in identifying if these tumors are good or bad, the question of this dataset is: can a machine, with enough examples, do the same as well as or better than a radiologist can?</description>
+    </item>
+    
+    <item>
+      <title>Exploring the Iris Dataset</title>
+      <link>/post/exploring-the-iris-dataset/</link>
+      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/exploring-the-iris-dataset/</guid>
+      <description>One of the most common example datasets that I came across in my journey into the data science world is called Iris. The dataset is a record of feature measurements (petal lengths and widths, sepal lengths and widths) of different species of Iris flowers. It is often used to demonstrate simple machine learning techniques.
+Many versions of this dataset exist, but we will be using the data found here.</description>
     </item>
     
   </channel>
