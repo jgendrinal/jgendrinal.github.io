@@ -19,7 +19,7 @@
       
       <guid>/about/</guid>
       <description>About me Hi! You can call me Francis. I work in consulting for banks and similar companies. Much of what I do is data import, cleanup, analysis, and presentation for the clients we serve. I write this blog to document my journey in getting better at working with data, while working at a full-time job.
-Python and R are favorites, but R is my tool of choice. Partly because it was taught in college.</description>
+Me, early in the office ahead of my manager. I sent him this photo shortly after.</description>
     </item>
     
     <item>
@@ -37,15 +37,6 @@ Python and R are favorites, but R is my tool of choice. Partly because it was ta
       <pubDate>Sun, 14 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/sundaystats-a-deep-dive-into-the-stats-package-in-r-the-normal-distribution/</guid>
-      <description>DISCLAIMER: I am not a working data analyst, nor am I a data scientist. As such, the code, techniques, and methods used in this blog post do not qualify as industry-level code, techniques, and methods. This blog and its corresponding github repository are meant to document my progress as I come to learn the techniques and skills a data analyst or data scientist will be needing in their line of work.</description>
-    </item>
-    
-    <item>
-      <title>TRAIN, inflation, and why economists think everything causes everything</title>
-      <link>/post/train-inflation-and-why-economists-think-everything-causes-everything/</link>
-      <pubDate>Sun, 14 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/train-inflation-and-why-economists-think-everything-causes-everything/</guid>
       <description>DISCLAIMER: I am not a working data analyst, nor am I a data scientist. As such, the code, techniques, and methods used in this blog post do not qualify as industry-level code, techniques, and methods. This blog and its corresponding github repository are meant to document my progress as I come to learn the techniques and skills a data analyst or data scientist will be needing in their line of work.</description>
     </item>
     
@@ -75,7 +66,7 @@ I cleaned up this dataset before I put it here so that we can do exploratory dat
       <pubDate>Tue, 24 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/restarting-and-clearing/</guid>
-      <description>IntroductionI’m trying so hard to get people on the bandwagon of clearing and restarting their R sessions frequently. If there’s anything you can do to ensure the integrity of your code, it’s restarting the R session, clearing your console screen, and re-running your code.
+      <description>Introduction I’m trying so hard to get people on the bandwagon of clearing and restarting their R sessions frequently. If there’s anything you can do to ensure the integrity of your code, it’s restarting the R session, clearing your console screen, and re-running your code.
 This practice ensures that you always start from a clean slate when you run your analysis. If you start your analysis with objects in your workspace and your code relies on that workspace, chances are that your analysis will fail to deliver, or you get unexpected (often wrong) results from the code you just run.</description>
     </item>
     
