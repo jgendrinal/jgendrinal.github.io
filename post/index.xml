@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Jose Francisco G. Endrinal</copyright>
-    <lastBuildDate>Sun, 14 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SundayStats: median()</title>
+      <link>/post/sundaystats-median/</link>
+      <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/sundaystats-median/</guid>
+      <description>The median is a statistical measure of central tendency of a variable given an ordered position of its variables. It has several advantages over the mean. One is that it is not affected as much by extreme values, which is an advantage if you variable is very dependent on extreme values like income and number of children. R’s implementation of the median() function depends on the input, and can be controlled.</description>
+    </item>
     
     <item>
       <title>Back to Iris: testing in R</title>
