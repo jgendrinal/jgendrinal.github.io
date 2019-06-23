@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html
+  class=""
+  lang="en-us"
+  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
+>
+  <head>
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+<meta name="keywords" content="">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content="" />
+<meta property="og:title" content="SundayStats: median()" />
+<meta property="og:site_name" content="The data salaryman" />
+<meta property="og:image" content="" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="" />
+<meta property="og:image:height" content="" />
+<meta property="og:url" content="/post/sundaystats-median/" />
+<meta property="og:locale" content="en-us" />
+<meta property="article:published_time" content="2019-06-20
+" /> <meta property="article:modified_time" content="2019-06-20
+" />
+
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@livingwithdata" />
+<meta name="twitter:creator" content="@livingwithdata" />
+<meta
+  name="twitter:title"
+  content="SundayStats: median() | The data salaryman"
+/>
+<meta
+  name="twitter:description"
+  content="The median is a statistical measure of central tendency of a variable given an ordered position of its variables. It has several advantages over the mean. One is that it is not affected as much by extreme values, which is an advantage if you variable is very dependent on extreme values like income and number of children. R’s implementation of the median() function depends on the input, and can be controlled.|"
+/>
+<meta name="twitter:image:src" content="" />
+<meta name="twitter:domain" content="/post/sundaystats-median/" />
+
+
+
+    <title>SundayStats: median()</title>
+    <link rel="canonical" href="/post/sundaystats-median/" />
+
+
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/tachyons@4.11.1/css/tachyons.min.css"
+/>
+
+<link rel="stylesheet" href="/css/style.css" />
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/highlightjs@9.12.0/styles/github-gist.css"
+/>
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async 
+src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-MML-AM_CHTML.js"
+></script>
+
+
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  </head>
+<body
+  lang="en-us"
+  class="sans-serif w-90 w-80-m w-60-ns center mv2 mv5-ns"
+  itemscope
+  itemtype="http://schema.org/Article"
+>
+  
+  <span class="b">/ </span>
+  <a href="/" class="b bb bw1 pb1 no-underline black">The data salaryman</a>
+  <span class="b"> / </span>
+  <a href="/post" class="b bb bw1 pb1 no-underline black">blog</a>
+
+  <section id="main" class="mt5">
+    <h1 itemprop="name" id="title">SundayStats: median()</h1>
+    <span class="f6 gray">June 20, 2019</span>
+
+      <article itemprop="articleBody" id="content" class="w-90 lh-copy">
+        
+
+
+<p>The median is a statistical measure of central tendency of a variable given an ordered position of its variables. It has several advantages over the mean. One is that it is not affected as much by extreme values, which is an advantage if you variable is very dependent on extreme values like income and number of children. R’s implementation of the <code>median()</code> function depends on the input, and can be controlled.</p>
+<pre class="r"><code>median</code></pre>
+<pre><code>## function (x, na.rm = FALSE, ...) 
+## UseMethod(&quot;median&quot;)
+## &lt;bytecode: 0x55c8fd5aec98&gt;
+## &lt;environment: namespace:stats&gt;</code></pre>
+<p>R assigns a median method that can work depending on the variable you input in <code>x</code>. By default, R computes the median in the following manner:</p>
+<pre class="r"><code>median.default</code></pre>
+<pre><code>## function (x, na.rm = FALSE, ...) 
+## {
+##     if (is.factor(x) || is.data.frame(x)) 
+##         stop(&quot;need numeric data&quot;)
+##     if (length(names(x))) 
+##         names(x) &lt;- NULL
+##     if (na.rm) 
+##         x &lt;- x[!is.na(x)]
+##     else if (any(is.na(x))) 
+##         return(x[FALSE][NA])
+##     n &lt;- length(x)
+##     if (n == 0L) 
+##         return(x[FALSE][NA])
+##     half &lt;- (n + 1L)%/%2L
+##     if (n%%2L == 1L) 
+##         sort(x, partial = half)[half]
+##     else mean(sort(x, partial = half + 0L:1L)[half + 0L:1L])
+## }
+## &lt;bytecode: 0x55c8fd27bcc0&gt;
+## &lt;environment: namespace:stats&gt;</code></pre>
+<p>The following lines are the real meat of the implementation:</p>
+<pre><code>if (n%%2L == 1L) 
+    sort(x, partial = half)[half]
+else mean(sort(x, partial = half + 0L:1L)[half + 0L:1L])</code></pre>
+<p>Lines 1 and here tell R to take the value at half + 1 of the sorted values, if it is not even, and line 3 tells R to take the average of the two middle values if it is not even.</p>
+<p>Again, pretty straightforward.</p>
+<p>Let’s see how this works:</p>
+<pre class="r"><code>data_odd &lt;- c(3, 4, 6, 7, 10, 12, 45)
+data_even &lt;- c(3, 4, 5, 5, 6, 10, 11)
+
+median(data_odd)</code></pre>
+<pre><code>## [1] 7</code></pre>
+<pre class="r"><code>median(data_even)</code></pre>
+<pre><code>## [1] 5</code></pre>
+<p>It works.</p>
+
+      </article>
+
+      
+      <span class="f6 gray mv3" title="Lastmod: June 20, 2019. Published at: 2019-06-20.">
+        
+      </span>
+
+      
+
+  </section>
+
+  <footer>
+    <div>
+      <p class="f6 gray mt6 lh-copy">
+        © 2019 Jose Francisco G. Endrinal
+      </p>
+    </div>
+  </footer>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+  </body>
+</html>
