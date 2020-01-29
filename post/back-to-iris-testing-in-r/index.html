@@ -21,7 +21,7 @@
 <meta property="og:description" content="" />
 <meta property="og:title" content="Back to Iris: testing in R" />
 <meta property="og:site_name" content="The data salaryman" />
-<meta property="og:image" content="" />
+<meta property="og:image" content="/images/iris2-og-thumbnail.png" />
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="" />
 <meta property="og:image:height" content="" />
@@ -217,8 +217,8 @@ test_that(&quot;Sepal widths are normally distributed&quot;, {
   expect_gt(virginica$p.value, 0.05)
 })</code></pre>
 <pre><code>## Error: Test failed: &#39;Sepal widths are normally distributed&#39;
-## * setosa$p.value is not strictly more than 0.05. Difference: -0.05
-## * versicolor$p.value is not strictly more than 0.05. Difference: -0.0227</code></pre>
+## * &lt;text&gt;:43: setosa$p.value is not strictly more than 0.05. Difference: -0.05
+## * &lt;text&gt;:44: versicolor$p.value is not strictly more than 0.05. Difference: -0.0227</code></pre>
 <p>We seem to have a problem with sepal lengths from setosa and versicolor. Let’s get really close and see what the problem is:</p>
 <pre class="r"><code># Distribution of iris classes over s_widths
 gather(iris.dt, key = &quot;measure&quot;, value = &quot;value&quot;, -class) %&gt;% 

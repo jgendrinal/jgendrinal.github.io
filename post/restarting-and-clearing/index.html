@@ -21,7 +21,7 @@
 <meta property="og:description" content="" />
 <meta property="og:title" content="Restarting and Clearing" />
 <meta property="og:site_name" content="The data salaryman" />
-<meta property="og:image" content="" />
+<meta property="og:image" content="/images/restart-og-thumbnail.png" />
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="" />
 <meta property="og:image:height" content="" />
@@ -151,7 +151,7 @@ rel_lm &lt;- lm(y ~ x, data = df)</code></pre>
 <p>Here’s what it looks like when Jonathan ran the same code.</p>
 <pre class="r"><code># My regression
 rel_lm &lt;- lm(y ~ x, data = df)</code></pre>
-<pre><code>## Error in terms.formula(formula, data = data): &#39;data&#39; argument is of the wrong type</code></pre>
+<pre><code>## Error in as.data.frame.default(data, optional = TRUE): cannot coerce class &#39;&quot;function&quot;&#39; to a data.frame</code></pre>
 <p>The analysis returns an error. Because the object <code>df</code> is not on Jonathan’s workspace, he cannot run the regression needed to see the results.</p>
 </div>
 </div>
