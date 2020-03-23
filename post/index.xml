@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Jose Francisco G. Endrinal</copyright>
-    <lastBuildDate>Thu, 20 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>mtcars</title>
+      <link>/post/mtcars/</link>
+      <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/mtcars/</guid>
+      <description>The mtcars dataset lists different cars from 1973-1974 comparing their fuel consumption and other attributes. This dataset sought to figure out the relationship between the different design aspects of the cars engine from it’s shape (v-type or straight) to its transmission (automatic or manual).
+Obviously the goal of this dataset is to find a relationship between the different aspects of the car’s design to its average fuel efficiency (miles per gallon).</description>
+    </item>
     
     <item>
       <title>SundayStats: median()</title>
