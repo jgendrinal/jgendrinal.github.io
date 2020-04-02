@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2019 Jose Francisco G. Endrinal</copyright>
-    <lastBuildDate>Mon, 23 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>creditscore | Tidy workflows for credit scorecard modelling</title>
+      <link>/post/creditscore-tidy-workflows-for-credit-scorecard-modelling/</link>
+      <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/creditscore-tidy-workflows-for-credit-scorecard-modelling/</guid>
+      <description>The creditscore R package is now available in public beta! The goal of this package is to be a framework for tidy workflows for credit scorecard modelling. With the use of the pipe (%&amp;gt;%) and evocative functions, each step of the credit scorecard modelling process will be made easier and more transparent to the user. It will also be easier for models to be deployed in a live setting since they are now objects within R.</description>
+    </item>
     
     <item>
       <title>mtcars</title>
